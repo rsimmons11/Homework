@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+
+header{
+    height: 108px;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+.courses{
+    float: left;
+    border: 5px solid black;
+    width: 10%;
+    clear: both;
+}
+
+form{
+    clear: both;
+    float: left;
+    border: 5px solid black;
+    width: 10%;
+}
+
+        input{
+            clear: both;
+            float: left;
+        }
+
+
+.logo{
+    border: 3px solid black;
+    max-width: 10%;
+    clear: both;
+    display: block;
+    
+}
+
+
+li{
+    width: 20%;
+    list-style: none;
+    border: 5px solid black;
+    clear: right;
+    float: right;
+    display: block;
+    width: 10%;
+}
+
+nav{
+    border-bottom: 2px solid lightgray;
+    clear: both;
+}
+
+.kids{
+    max-width: 45%;
+    border: 5px solid black;
+    margin-left: 150px;
+    margin-top: 25px;
+    clear: both;
+}
+
+.container{
+    width: 50%;
+    max-height: 700px;
+    border: 5px solid black;
+    float: left;
+}
+
+
+.buttons{
+    border: 5px solid black;
+    background: lightblue;
+    color: white;
+    margin: 5px;
+}

@@ -1,0 +1,227 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body * {
+    padding: 0;
+
+}
+
+
+
+/******************************************
+/* Header
+/*******************************************/
+
+header {
+    width: 100%;
+    height: 200px;
+}
+
+.btn {
+    text-align: center;
+    float: right;
+    padding: 0 10px;
+    margin-right: 80px;
+    height: 25px;
+    width: 4%;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+}
+
+nav {
+    width: 31%;
+    float: left;
+}
+
+ul {
+    list-style: none;
+    padding-left: 100px;
+
+}
+
+li * {
+    float: left;
+    margin: 0 10px;
+    color: gray;
+
+}
+
+.source {
+    width: 31%;
+    float: left;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+main * {
+    overflow: auto;
+}
+
+main > div + img {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    width: 30%;
+}
+
+.tag {
+    width: 46%;
+    margin-right: 20px;
+    margin-left: 150px;
+    padding: 0 100px;
+    padding-right: 200px;
+    float: left;
+}
+
+input {
+    height: 25px;
+    border-style: none;
+    background-color: rgb(225, 233, 240);
+}
+
+.input-button {
+    width: 15%;
+    float: left;
+}
+
+button + p {
+    clear: both;
+    margin-right: 120px;
+    margin-top: 10px;
+}
+
+form {
+    width: 175px;
+    float: left;
+    height: 30px;
+}
+
+.links {
+    width: 100%;
+}
+
+section > div {
+    float: left;
+    width: 20%;
+    margin-left: 150px;
+    padding: 0 40px;
+}
+
+.link-two, .link-three, .link-four {
+    margin: 0 10px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header, main {
+    background-color: rgb(242, 246, 249);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+span, div > p {
+    color: gray;
+
+}
+/******************************************
+/* MEDIA QUERIE
+/*******************************************/
+
+
+@media (min-width: 801px) and (max-width: 1200px){
+    .tag, form, .input-button, main > div + img{
+        width: auto;
+}
+}
+
+@media (min-width: 801px) and (max-width: 1200px){
+    main > div + img {
+        text-align: center;
+        margin-left: 25%;
+    }
+}
+
+@media  (min-width: 601px) and (max-width: 800px){
+    main > div + img {
+        text-align: center;
+        margin-left: 25%;
+}
+}
+
+
+@media  (min-width: 601px) and (max-width: 800px){
+    li *, .nav-btn, .links {
+        display: none;
+         
+}
+}
+
+@media  (min-width: 601px) and (max-width: 800px){
+    .tag, form, .input-button, main > div + img {
+        width: auto;
+         
+}
+}
+
+@media  (min-width: 480px) and (max-width: 600px){
+    li *, .nav-btn, .links {
+        display: none;
+}
+}
+
+@media  (min-width: 480px) and (max-width: 600px){
+    .tag, form, .input-button, main > div + img {
+        width: auto;
+    }        
+}
+
+@media  (min-width: 480px) and (max-width: 600px){
+    main > div + img {
+        margin-left: 25%;
+}
+}
+
+@media  (min-width: 480px) and (max-width: 800px){
+    .input-button {
+        width: 169px;
+
+}
+}
+
+@media  (min-width: 601px) and (max-width: 800px){
+    header > a {
+        margin-left: 35%;
+        margin-top: 10%;         
+}
+}

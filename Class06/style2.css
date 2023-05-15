@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 100px;
+    width: 100%;
+    border: 2px solid red;
+    clear: both;
+}
+section {
+    height: 100px;
+    width: 33.3333%;
+    border: 2px solid red;
+    float: left;
+}
+/* this is to make the page responsive */
+@media all and (min-width: 901px) {
+    header,section,footer {
+        background: white;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    header,
+    section,
+    footer {
+        background: gold;
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width: 699px) {
+    header,
+    section,
+    footer {
+        background: red;
+        border: 2px solid gold;
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width: 699px) {
+    section {
+        float: none;
+        width: auto;
+    }
+}

@@ -1,0 +1,170 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* body * {
+     border: 1px solid red;
+
+} */
+
+
+/******************************************
+/* HEADER
+/*******************************************/
+header {
+     width: 100%;
+     height: 200px;
+
+}
+
+nav * {
+     width: 33.3333%;
+     float: left;
+     padding: 0 ;
+     margin: 0;
+     color: white;
+}
+
+/******************************************
+/* LAYOUTS
+/*******************************************/
+
+
+ul * {
+     width: 50%;
+}
+
+img + a {
+     width: 295px;
+     margin-left: 220px;
+}
+
+ul + img {
+     margin-left: 20px;
+}
+
+.grit * {
+     text-align: center;
+     height: 175px;
+}
+
+.volunteer {
+     text-align: center;
+     margin-top: 50px;
+     margin: 0 240px;
+     height: 400px;
+}
+
+.volunteer p {
+     padding: 0 200px;
+}
+
+/******************************************
+/* FONT
+/*******************************************/
+ul {
+     list-style: none;
+}
+
+h1 {
+     font-size: 60px;
+}
+
+h2 {
+     font-size: 40px;
+}
+
+.volunteer p {
+     font-size: 20px;
+}
+
+
+footer > section {
+     text-align: center;
+}
+
+
+main {
+     background-color: rgba(37, 44, 70, 0.671);
+     color: white;
+}
+
+.grit p {
+     font-size: 20px;
+     padding: 0 250px;
+     margin: 0 20px;
+}
+
+.why {
+     height: 400px;
+     text-align: center;
+     font-size: 20px;
+}
+
+.why p {
+     padding: 0 200px;
+     margin: 0 375px;
+}
+
+.col-1-2 {
+     background-color: rgb(219, 218, 218);
+     height: 550px;
+     padding: 80px 250px;
+     text-align: center;
+}
+.col-1-2 > section {
+     width: 50%;
+     float: left;
+     font-size: 20px;
+}
+
+h3 + p + a, .volunteer a {
+     border: 1px solid black;
+     padding: 10px;
+     margin-top: 20px;
+}
+
+a {
+     text-decoration: none;
+}
+/******************************************
+/* FOOTER
+/*******************************************/
+footer * {
+     background-color: black;
+}
+footer > section > div > a {
+     color: white;
+     background-color: black;
+
+}
+
+div h4 + a {
+     margin: 0 10px;
+}
+
+footer > section {
+     float: left;
+     width: 50%;
+     color: white;
+}
+

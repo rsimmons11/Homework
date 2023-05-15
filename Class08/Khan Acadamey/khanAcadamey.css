@@ -1,0 +1,106 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body * {
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header nav > *{
+    float: left;
+    width:15%;
+    margin:0 5%;
+    list-style: none;
+    font-size: 22px;
+  }
+
+  nav > ul {
+    padding: 0 ;
+  }
+  
+  header nav li{
+    width: 33.3%;
+    margin: auto;
+    float: left;
+  }
+
+
+  main > section {
+    float:left; 
+    width: 50%;
+    height: 300px;
+  }
+  
+  input {
+    border-radius: 5px;
+    background-color: rgb(241, 238, 238);
+    border: none;
+    padding: 3px 0;
+    font-size: 15px;
+    
+  }
+
+form {
+  width: 10%;
+}
+
+  img{
+    margin-top: 13%;
+    margin-left: 140px;
+  }
+  
+  h2 + ul, nav > a, input {
+    font-weight: 700;
+    color: blue;
+  }
+  main section + section{
+    margin-top: 10%;
+  }
+  
+  main section > ul > li{
+    float: left;
+    margin: 5px;
+    list-style:none;
+  }
+
+  .container {
+    font-size: 50px;
+  }
+  
+  .class {
+    font-size: 15px;
+  }
+  .community {
+    font-size: 25px;
+  }
+
+  .container p {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .community a {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+
+  }
+

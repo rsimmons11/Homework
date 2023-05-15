@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>Hair Salon</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="HairSalon.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+		
+	</head>
+	<body>
+		<header>
+			<img src="#" alt="logo" class="logo">
+
+			<nav>
+				<ul class="nav">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="lookBook.html">LOOKBOOK</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+
+			<section class="cart">
+				<img class="search" src="#" alt="search">
+				<img class="cart-img" src="#" alt="shopping cart">
+				<a class="book" href="book.html">BOOK ONLINE</a>
+
+			</section>
+
+			
+		</header>
+
+		<main class="container">
+
+			<section class="bold">
+				<h1>Dark & Bold</h1>
+				<p>DIVIDE YOUR UNIQUENESS BY YOUR HAIR STYLE</p>
+
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">- OUR SERVICES</button>
+					<div id="myDropdown" class="dropdown-content">
+					  <a href="#">Fade Haircut</a>
+					  <a href="#">Beard Grooming</a>
+					  <a href="#">Straight Razor Shave</a>
+					  <a href="#">Colours and Treatment</a>
+					  <a href="#">Kid's Haircut</a>
+					</div>
+				  </div>
+
+			</section>
+
+			<section class="coupon">
+				<p>YOUR FIRST VISIT?</p>
+				<p>-20% FOR THE FIRST</p>
+				<p>CLASSIC HAIR COLORING</p>
+				<a class="coupon-btn" href="book.html">BOOK ONLINE</a>
+			</section>
+
+		</main>
+
+		<section>
+
+			<ul class="shop-extras">
+				<li>EXPERT BARBERS<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. s deserunt assumenda tempore. Dolor quibusdam maxime enim in aspernatur!</P></li>
+				<li>QUALITY SERVICES<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. s deserunt assumenda tempore. Dolor quibusdam maxime enim in aspernatur!</P></li>
+				<li>GROOMING PRODUCTS<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. s deserunt assumenda tempore. Dolor quibusdam maxime enim in aspernatur!</P></li>
+			</ul>
+
+		</section>
+
+		<section class="momentum">
+			<div class="mome-left" >
+				<h3>MAKE YOUR OWN MOMENTUM</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus incidunt dignissimos doloremque cupiditate odit fugit ullam nostrum modi. Commodi nostrum quas atque esse incidunt tempore praesentium aliquid distinctio maiores.</p>
+			</div>
+			<div class="mome-right">
+				<img class="mome-img" src="images/barber2.jpeg">Video Goes Here</video>
+			</div>
+
+		</section>
+
+		<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+			
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			}
+			</script>
+			
+	</body>
+</html>
